@@ -63,8 +63,8 @@ body {
 }
 
 .search {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   margin-left: 50px;
 }
 .search :hover {
@@ -79,27 +79,29 @@ body {
   margin-left: -20%; /* Adjust the margin to move the logo more to the left */
   margin-top: -16px;
   position: absolute;
-  filter: invert(100%);
+  filter: invert(100%) brightness(60%);
 }
 
 .logo:hover {
   cursor: pointer;
   filter: invert(100%) brightness(150%);
+  color: linear-gradient(120deg, red, rgb(248, 57, 160));
 }
+
 main {
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 2fr));
+  grid-template-columns: repeat(2, minmax(320px, 2fr));
   gap: 220px;
   padding: 5px;
-  margin: 19%;
+  margin: 22%;
   position: fixed;
-  margin-left: 23%;
+  margin-left: 24.9%;
   z-index: -1;
 }
 #spider {
   font-family: "spoidyfont", sans-serif;
   color: red;
-  font-size: 98px;
+  /* font-size: 98px; */
   /* display: flex; */
   /* justify-content: center; */
   margin-left: -10px;
@@ -109,12 +111,17 @@ main {
 #man {
   font-family: "spoidyfont", sans-serif;
   color: red;
-  font-size: 98px;
+  /* font-size: 98px; */
   /* display: flex; */
   margin-left: 85px;
   /* justify-content: center; */
   text-shadow: 0 0 12px red;
   /* transition: text-shadow 0.3s ease-in-out; */
+}
+#spider,
+#man {
+  font-size: 90px;
+  margin-left: 0;
 }
 /* #info{
   background-color: black;
@@ -133,7 +140,7 @@ center {
   font-size: 50px;
   padding: 2rev;
   letter-spacing: 8px;
-  text-decoration: overline underline;
+  text-decoration: underline;
   margin-top: 10px;
 }
 body::-webkit-scrollbar {
@@ -289,7 +296,6 @@ body::-webkit-scrollbar-track {
   /* position: absolute; */
   /* border: 2px solid white; */
   transition: all ease-in-out 0.5s;
- 
 }
 #homepeter {
   font-family: "spoidyfont2", sans-serif;
@@ -333,7 +339,6 @@ body::-webkit-scrollbar-track {
   border-right: 3px solid rgba(229, 17, 17, 0.2);
   border-top: 3px solid rgba(219, 57, 248, 0.2);
   border-left: 3px solid rgba(219, 57, 248, 0.2);
- 
 }
 
 #peni1 {
@@ -347,11 +352,10 @@ body::-webkit-scrollbar-track {
   border-right: 3px solid rgba(229, 17, 17, 0.4);
   border-top: 3px solid rgba(219, 57, 248, 0.4);
   border-left: 3px solid rgba(219, 57, 248, 0.4);
- 
+
   border-radius: 10px;
   filter: brightness(83%);
   transition: ease-out 0.5s;
-
 }
 #peni2 {
   /* position: absolute; */
@@ -364,11 +368,10 @@ body::-webkit-scrollbar-track {
   border-right: 3px solid rgba(229, 17, 17, 0.4);
   border-top: 3px solid rgba(219, 57, 248, 0.4);
   border-left: 3px solid rgba(219, 57, 248, 0.4);
- 
+
   border-radius: 10px;
   filter: brightness(79%);
   transition: ease-out 0.5s;
-
 }
 
 #peni1:hover {
@@ -378,7 +381,6 @@ body::-webkit-scrollbar-track {
   filter: brightness(80%);
   /* position: absolute; */
   /* border: 2px solid white; */
- 
 }
 
 #peni2:hover {
@@ -389,7 +391,6 @@ body::-webkit-scrollbar-track {
   /* position: absolute; */
   /* border: 2px solid white; */
   transition: ease-in-out 0.5s;
- 
 }
 
 #homepeni {
@@ -414,8 +415,11 @@ body::-webkit-scrollbar-track {
   left: 0;
   right: 0;
   height: 3px; /* Adjust the thickness of the overline */
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgb(248, 57, 160));
-
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.8),
+    rgb(248, 57, 160)
+  );
 }
 
 .miles {
@@ -465,7 +469,6 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
   transition: ease-out 0.5s;
   filter: brightness(69%);
-
 }
 #miles1:hover {
   cursor: pointer;
@@ -475,7 +478,6 @@ body::-webkit-scrollbar-track {
   /* position: absolute; */
   /* border: 2px solid white; */
   transition: ease-in-out 0.5s;
-  
 }
 #miles2:hover {
   cursor: pointer;
@@ -485,18 +487,23 @@ body::-webkit-scrollbar-track {
   /* position: absolute; */
   /* border: 2px solid white; */
   transition: ease-in-out 0.5s;
-  
 }
 
-#homemiles{
+#homemiles {
   font-family: "spoidyfont2", sans-serif;
-  color: rgba(255, 0, 0,0.9 );
+  color: rgba(255, 0, 0, 0.9);
   font-size: xx-large;
   letter-spacing: 4px;
   font-weight: 500;
   position: absolute;
   margin-top: 58%;
-   background: linear-gradient(120deg, red,rgb(128, 97, 24),rgb(65, 16, 16), rgb(226, 17, 17));
+  background: linear-gradient(
+    120deg,
+    red,
+    rgb(128, 97, 24),
+    rgb(65, 16, 16),
+    rgb(226, 17, 17)
+  );
   -webkit-background-clip: text; /* For older versions of Chrome */
   background-clip: text;
   color: transparent;
@@ -505,14 +512,18 @@ body::-webkit-scrollbar-track {
 #homemiles:before {
   content: "";
   position: absolute;
-  top: -1px; 
+  top: -1px;
   left: 0;
   right: 0;
   height: 3px;
-  background-image: linear-gradient(120deg, red,rgb(128, 97, 24),rgb(65, 16, 16), rgb(226, 17, 17));
-
+  background-image: linear-gradient(
+    120deg,
+    red,
+    rgb(128, 97, 24),
+    rgb(65, 16, 16),
+    rgb(226, 17, 17)
+  );
 }
-
 
 .miguel {
   display: flex;
@@ -561,7 +572,6 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
   transition: ease-out 0.5s;
   filter: brightness(93%);
-
 }
 
 #miguel1:hover {
@@ -588,32 +598,34 @@ body::-webkit-scrollbar-track {
   left: 8%;
 }
 
-#homemiguel{
+#homemiguel {
   font-family: "spoidyfont2", sans-serif;
-  color: rgba(255, 0, 0,0.9 );
+  color: rgba(255, 0, 0, 0.9);
   font-size: xx-large;
   letter-spacing: 3px;
   font-weight: 500;
   position: absolute;
   margin-top: 58%;
-   background: linear-gradient(60deg, rgb(57, 100, 181), rgba(255, 94, 0,0.97) );
+  background: linear-gradient(60deg, rgb(57, 100, 181), rgba(255, 94, 0, 0.97));
   -webkit-background-clip: text; /* For older versions of Chrome */
   background-clip: text;
   color: transparent;
-
 }
 
 #homemiguel:before {
   content: "";
   position: absolute;
-  top: -1px; 
+  top: -1px;
   left: 0;
   right: 0;
   height: 3px;
-  background-image: linear-gradient(60deg, rgb(57, 100, 181), rgba(255, 94, 0,0.97) );
-
+  background-image: linear-gradient(
+    60deg,
+    rgb(57, 100, 181),
+    rgba(255, 94, 0, 0.97)
+  );
 }
-.noir{
+.noir {
   display: flex;
   position: relative;
   background: black;
@@ -661,30 +673,38 @@ body::-webkit-scrollbar-track {
   /* filter: brightness(83%); */
 }
 
-#homenoir{
+#homenoir {
   font-family: "spoidyfont2", sans-serif;
-  color: rgba(255, 0, 0,0.9 );
+  color: rgba(255, 0, 0, 0.9);
   font-size: xx-large;
   letter-spacing: 3px;
   font-weight: 500;
   position: absolute;
   margin-top: 58%;
-   background: linear-gradient(60deg, rgba(247, 234, 234, 0.521),rgba(212, 204, 204, 0.3), rgba(212, 204, 204, 0.2));
+  background: linear-gradient(
+    60deg,
+    rgba(247, 234, 234, 0.521),
+    rgba(212, 204, 204, 0.3),
+    rgba(212, 204, 204, 0.2)
+  );
   -webkit-background-clip: text; /* For older versions of Chrome */
   background-clip: text;
   color: transparent;
-
 }
 
 #homenoir:before {
   content: "";
   position: absolute;
-  top: -1px; 
+  top: -1px;
   left: 0;
   right: 0;
   height: 3px;
-  background-image: linear-gradient(60deg,  rgba(247, 234, 234, 0.521),rgba(212, 204, 204, 0.3), rgba(212, 204, 204, 0.2));
-
+  background-image: linear-gradient(
+    60deg,
+    rgba(247, 234, 234, 0.521),
+    rgba(212, 204, 204, 0.3),
+    rgba(212, 204, 204, 0.2)
+  );
 }
 
 #noir1:hover {
@@ -710,7 +730,7 @@ body::-webkit-scrollbar-track {
   top: 8%;
   left: 8%;
 }
-.textvid{
+.textvid {
   font-family: "spoidyfont2", sans-serif;
   font-size: xx-large;
   font-weight: bolder;
@@ -719,11 +739,11 @@ body::-webkit-scrollbar-track {
   font-size: 50px;
   padding: 2rev;
   letter-spacing: 8px;
-  text-decoration:underline;
+  text-decoration: underline;
   margin-top: 10px;
   margin-left: 47%;
 }
-#video{
+#video {
   margin-top: 30px;
   background-color: rgba(0, 0, 0, 0.9);
   width: 1460px;
@@ -732,10 +752,9 @@ body::-webkit-scrollbar-track {
   margin-left: 25px;
   border: 1px solid bisque;
   position: absolute;
-  
 }
 
-.viddimension{
+.viddimension {
   margin-top: 2%;
   height: 55vh;
   width: 41vw;
@@ -752,8 +771,8 @@ body::-webkit-scrollbar-track {
   border-radius: 20px;
 }
 
-#andrew{
-  border: 0px solid rgba(89, 77, 77,1);
+#andrew {
+  border: 0px solid rgba(89, 77, 77, 1);
   border-radius: 30px;
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 2fr));
@@ -766,8 +785,8 @@ body::-webkit-scrollbar-track {
   display: flex;
   justify-content: center;
 }
-.videoinfoborder{
-  border: 2px solid rgba(89, 77, 77,0.6);
+.videoinfoborder {
+  border: 2px solid rgba(89, 77, 77, 0.6);
   border-radius: 10px;
   height: 40%;
   margin-top: 2.5%;
@@ -776,7 +795,7 @@ body::-webkit-scrollbar-track {
   color: rgb(234, 226, 226);
 }
 
-.petervidname{
+.petervidname {
   font-family: "spoidyfont", sans-serif;
   color: white;
   font-size: 40px;
@@ -784,39 +803,36 @@ body::-webkit-scrollbar-track {
   /* justify-content: center; */
   margin-left: -10px;
   text-shadow: 0 0 15px red;
- margin-top: 20px;
- text-align: center;
- position: relative;
-  }
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
 
-.petervidname::before{
+.petervidname::before {
   content: "";
   position: absolute;
   top: -10px;
-  width: 400px; 
+  width: 400px;
   left: 147px;
   right: 0;
   height: 3px;
   background-color: white;
 }
 
-#andrewpeterinfo{
-  font-family: 'Courier New', Courier, monospace;
+#andrewpeterinfo {
+  font-family: "Courier New", Courier, monospace;
   font-weight: 800;
   font-size: 16px;
   text-align: justify;
   margin-left: 10%;
   margin-top: 5%;
   margin-right: 10%;
- margin-bottom: 15px;
-  
+  margin-bottom: 15px;
 }
 /* ------------------ */
 
-
-#tom
-  {
-  border: 0px solid rgba(89, 77, 77,1);
+#tom {
+  border: 0px solid rgba(89, 77, 77, 1);
   border-radius: 30px;
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 2fr));
@@ -830,233 +846,162 @@ body::-webkit-scrollbar-track {
   justify-content: center;
 }
 
-#tompeterinfo{
-  font-family: 'Courier New', Courier, monospace;
+#tompeterinfo {
+  font-family: "Courier New", Courier, monospace;
   font-weight: 800;
   font-size: 16px;
   text-align: justify;
   margin-left: 10%;
   margin-top: 5%;
   margin-right: 10%;
- margin-bottom: 15px;
-  
+  margin-bottom: 15px;
 }
-.tom::before{
-  width:240px ;
+.tom::before {
+  width: 240px;
   left: 217px;
-
 }
 
-.tomvidinfo{
-margin-left:20px ;
-}
-
-
-/* ---------- */
-#tobey
-  {
-  border: 0px solid rgba(89, 77, 77,1);
-  border-radius: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 2fr));
-  gap: 20px;
-  padding: 2px;
-  position: relative;
-  width: 93%;
-  margin-left: 3.5%;
-  margin-top: 1%;
-  display: flex;
-  justify-content: center;
-}
-
-#tobeypeterinfo{
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 800;
-  font-size: 16px;
-  text-align: justify;
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-right: 10%;
- margin-bottom: 15px;
-  
-}
-.tobey::before{
-  width:300px ;
-  left: 188px;
-
-}
-
-/* ----------- */
-#miles
-  {
-  border: 0px solid rgba(89, 77, 77,1);
-  border-radius: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 2fr));
-  gap: 20px;
-  padding: 2px;
-  position: relative;
-  width: 93%;
-  margin-left: 3.5%;
-  margin-top: 1%;
-  display: flex;
-  justify-content: center;
-}
-
-#milespeterinfo{
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 800;
-  font-size: 16px;
-  text-align: justify;
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-right: 10%;
- margin-bottom: 15px;
-  
-}
-.milesborder{
-
+.tomvidinfo {
   margin-left: 20px;
 }
 
-  .mile::before{
-    width:250px ;
-    left: 183px;
-  
-  }
+/* ---------- */
+#tobey {
+  border: 0px solid rgba(89, 77, 77, 1);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 2fr));
+  gap: 20px;
+  padding: 2px;
+  position: relative;
+  width: 93%;
+  margin-left: 3.5%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+}
 
-  .milesviddimension{
-    margin-top: 2%;
+#tobeypeterinfo {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: justify;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-bottom: 15px;
+}
+.tobey::before {
+  width: 300px;
+  left: 188px;
+}
+
+/* ----------- */
+#miles {
+  border: 0px solid rgba(89, 77, 77, 1);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 2fr));
+  gap: 20px;
+  padding: 2px;
+  position: relative;
+  width: 93%;
+  margin-left: 3.5%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+#milespeterinfo {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: justify;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-bottom: 15px;
+}
+.milesborder {
+  margin-left: 20px;
+}
+
+.mile::before {
+  width: 250px;
+  left: 183px;
+}
+
+.milesviddimension {
+  margin-top: 2%;
   height: 55vh;
   width: 45vw;
   left: 10%;
   margin-top: 4%;
   border: 1px solid black;
-  
-  }
-
-.spiderversevid{
-    display: flex;
-    justify-content: space-evenly;
-
 }
-  #spiderverse{
-    font-family: "spoidyfont2", sans-serif;
-   
-    font-weight: bolder;
-    color: rgb(250, 227, 215);
-    text-shadow: 2px 1px 0px red;
-    font-size: 50px;
-    padding: 2rev;
-    letter-spacing: 8px;
-    text-align: center;
-    margin-top: 10px;
-    text-decoration: underline;
-  }
-  #spiderverse1{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: small;
-    font-weight: 600;
-    color: rgba(250, 227, 215,0.9);
-    text-shadow: 0px 0px 0px red;
-    font-size: 28px;
-    height: 10px;
-    letter-spacing: 0px;
-    text-decoration:none;
-    margin-top: 15px;
-    text-align: center;
 
-  } 
-  .one{
-    border: 1px solid rgba(250, 227, 215,0.6);
-    border-radius:10px ;
-  }
-  .two{
-margin-top: 10%;
-  }
+.spiderversevid {
+  display: flex;
+  justify-content: space-evenly;
+}
+#spiderverse {
+  font-family: "spoidyfont2", sans-serif;
 
-  html{
-    scroll-behavior: smooth;
-  }
-  #intothespiderverse{
-    position: absolute;
-    top: 92.4%;
-    margin-left: 15%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    font-size: 23px;
-    border-right: 2px solid rgba(250, 227, 215,0.6);
-    border-left: 2px solid rgba(250, 227, 215,0.6);
-    border-bottom: 2px solid rgba(250, 227, 215,0.6);
-    padding: 6px;
-  }
-  #intothespiderverse2{
-    position: absolute;
-    top: 79.88%;
-    margin-left: 62.88%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    font-size: 23px;
-    border-right: 2px solid rgba(250, 227, 215,0.6);
-    border-left: 2px solid rgba(250, 227, 215,0.6);
-    border-top: 2px solid rgba(250, 227, 215,0.6);
-    padding: 6px;
-  }
+  font-weight: bolder;
+  color: rgb(250, 227, 215);
+  text-shadow: 2px 1px 0px red;
+  font-size: 50px;
+  padding: 2rev;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+#spiderverse1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  font-weight: 600;
+  color: rgba(250, 227, 215, 0.9);
+  text-shadow: 0px 0px 0px red;
+  font-size: 28px;
+  height: 10px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  margin-top: 15px;
+  text-align: center;
+}
+.one {
+  border: 1px solid rgba(250, 227, 215, 0.6);
+  border-radius: 10px;
+}
+.two {
+  margin-top: 10%;
+}
 
-  @media (max-width: 768px) {
-    header {
-      width: 80%;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    main, .allspiderman {
-      margin: 5% 2%;
-    }
-  
-    .b, .peterparker, .gwen, .peni, .miles, .miguel, .noir {
-      height: 40vh;
-    }
-  
-    #spider, #man {
-      font-size: 60px;
-      margin-left: 0;
-    }
-  
-    center {
-      font-size: 30px;
-    }
-  }
-  
-  @media (max-width: 480px) {}
-    header {
-      width: 100%;
-    }
-  
-    main, .allspiderman {
-      margin: 2% 1%;
-    }
-  
-    .b, .peterparker, .gwen, .peni, .miles, .miguel, .noir {
-      height: 30vh;
-    }
-  
-    #spider, #man {
-      font-size: 40px;
-    }
-  
-    center {
-      font-size: 20px;
-    }
-  
-    .search {
-      margin-left: 0;
-    }
-  
-    .logo {
-      width: 40px;
-      height: 40px;
-      margin-left: 0;
-    }
-
- 
+html {
+  scroll-behavior: smooth;
+}
+#intothespiderverse {
+  position: absolute;
+  top: 92.4%;
+  margin-left: 15%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 23px;
+  border-right: 2px solid rgba(250, 227, 215, 0.6);
+  border-left: 2px solid rgba(250, 227, 215, 0.6);
+  border-bottom: 2px solid rgba(250, 227, 215, 0.6);
+  padding: 6px;
+}
+#intothespiderverse2 {
+  position: absolute;
+  top: 79.88%;
+  margin-left: 62.88%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 23px;
+  border-right: 2px solid rgba(250, 227, 215, 0.6);
+  border-left: 2px solid rgba(250, 227, 215, 0.6);
+  border-top: 2px solid rgba(250, 227, 215, 0.6);
+  padding: 6px;
+}
