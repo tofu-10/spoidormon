@@ -1,0 +1,5 @@
+tom.mp4 filter=lfs diff=lfs merge=lfs -text
+all3.mp4 filter=lfs diff=lfs merge=lfs -text
+andrew.mp4 filter=lfs diff=lfs merge=lfs -text
+tobey.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
